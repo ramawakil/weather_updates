@@ -1,0 +1,35 @@
+{% extends 'base.html' %}
+
+{% block title %}Weather{% endblock title %}
+{% block tt %}Weather{% endblock tt %}
+{% block body %}
+
+
+
+    <div class="row">
+    {% for post in final %}
+        <div class="col s4">
+            <div class="card hoverable">
+                <div class="card-header">
+                    <h5 class="blue-text center-align">{{ post.0 }}</h5>
+                </div>
+                <p class="center-align">
+                    {{ post.1 }}
+                </p>
+                <div class="card-content">
+
+
+                    <p class=""><i class="material-icons right blue-text lighten-4">wb_cloudy</i><h6 class="new badge blue lighten-5">{{ post.3 }} Rain Chance</h6> </p>
+                    <p class=""><i class="material-icons right yellow-text lighten-4">wb_sunny</i><h6 class="new badge red lighten-5">{{ post.2 }} C</h6> </p>
+                </div>
+            </div>
+        </div>
+
+    {% endfor %}
+
+
+    </div>
+
+
+
+{% endblock body %}
