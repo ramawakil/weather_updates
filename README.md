@@ -1,0 +1,3 @@
+# weather_updates
+This is a simple weather app showing how to use django and automate your daily boring activities...
+plus if you got a nicer readme your welcome to send them to me through "ramadhanwakil19@gmail.com" then i will update them.. 
